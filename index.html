@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Ujian Sekolah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, rgba(36,198,220,1) 0%, rgba(81,74,157,1) 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Judul dengan animasi keren */
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #00ffcc, #00ffff, #ff99cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s infinite;
+        }
+
+        /* Animasi glow pada judul */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffff, 0 0 15px #ff99cc;
+            }
+            50% {
+                text-shadow: 0 0 15px #00ffcc, 0 0 20px #00ffff, 0 0 25px #ff99cc;
+            }
+            100% {
+                text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffff, 0 0 15px #ff99cc;
+            }
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Dropdown styling */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(36,198,220,1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1.5rem;
+            text-align: left;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Tampilkan dropdown saat di klik */
+        nav ul li:focus-within ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Ujian Sekolah</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#" tabindex="0">Kelas 10</a>
+                    <ul>
+                        <li><a href="kelas10-1.html">Kelas 10-1</a></li>
+                        <li><a href="kelas10-2.html">Kelas 10-2</a></li>
+                        <li><a href="kelas10-3.html">Kelas 10-3</a></li>
+                        <li><a href="kelas10-4.html">Kelas 10-4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" tabindex="0">Kelas 11</a>
+                    <ul>
+                        <li><a href="kelas11-1.html">Kelas 11-1</a></li>
+                        <li><a href="kelas11-2.html">Kelas 11-2</a></li>
+                        <li><a href="kelas11-3.html">Kelas 11-3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" tabindex="0">Kelas 12</a>
+                    <ul>
+                        <li><a href="kelas12-1.html">Kelas 12-1</a></li>
+                        <li><a href="kelas12-2.html">Kelas 12-2</a></li>
+                        <li><a href="kelas12-3.html">Kelas 12-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p style="text-align:center; padding: 2rem;">Selamat Datang di Website Ujian Sekolah</p>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 1rem; background-color: #333; color: white;">
+        <p>&copy; 2024 Humas Sekolah</p>
+    </footer>
+</body>
+</html>
